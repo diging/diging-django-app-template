@@ -25,4 +25,4 @@ exec gunicorn ${DJANGO_WSGI_MODULE}:application \
   --workers $NUM_WORKERS \
   --bind=0.0.0.0:8000 \
   --log-level=info \
-  --log-file /edrop/logs/app_supervisor.log
+  --log-file /app/logs/app_supervisor.log
